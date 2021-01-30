@@ -12,8 +12,6 @@ class RateLimiterController(
     private val rateLimiterSample: RateLimiter
 ) {
 
-    private val logger = LoggerFactory.getLogger(javaClass)
-
     @GetMapping
     fun canConsume(): Boolean {
         return rateLimiterSample.canConsume()
