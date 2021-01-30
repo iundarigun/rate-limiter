@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: rate-limiter
+  redis:
+    host: localhost
+    port: 6379
+
+rate-limiter-sample:
+  window-duration-in-seconds: 60
+  window-size: 60
